@@ -1,8 +1,14 @@
 header {
-    
+    font-family: 'Poppins Bold 700', Helvetica, sans-serif;
     padding: 20px;
     width: auto;
     height: 20px;
+    font-size: large;
+    font-weight: 600;
+}
+
+#mobile {
+    display: none;
 }
 
 header.hero {
@@ -10,6 +16,10 @@ header.hero {
     
     background-size: 100%;
     background-position: center;
+}
+
+header .mobile {
+    display: none;
 }
 
 .guitar {
@@ -26,6 +36,7 @@ header.hero {
 
 h1 {
     margin-left: 30px;
+    font-family: 'Poppins Bold 700', Helvetica, sans-serif;
 }
 
 header .logo a {
@@ -53,6 +64,7 @@ nav ul {
 
 }
 
+
 nav ul li {
     display: inline-block;
     margin-right: 20px;
@@ -79,8 +91,10 @@ nav ul li a {
 body {
     background-color: black;
     color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Helvetica Neue, Helvetica, sans-serif;
     margin: 0;
+    font-size: large;
+    line-height: 1.4;
 }
 
 .triple {
@@ -108,7 +122,7 @@ body {
 
 
 .aimg :hover {
-    border: 2px rgb(51, 118, 205) solid;
+    border: 2px rgb(50, 133, 241) solid;
 }
 
 
@@ -123,19 +137,18 @@ body {
 
 td{
     border: 1px solid;
-    width: auto;
-}
-
-td {
+    width: 100%;
     padding: 15px;
 }
 
+
 form {
     padding: 30px;
+    
 }
 
 footer {
-    padding: 20px;
+    padding: 25px;
 
 }
 
@@ -145,7 +158,7 @@ footer {
         
     }
     .triple figure {
-        margin-left: 12%;
+        margin-left: 22%;
         
     }
     .Hobbimages{
@@ -159,16 +172,66 @@ footer {
     header.hero {
         height: 290px;
     }
+    .triple figure {
+        margin-left: 15%;
+        
+    }
+    form {
+        width: 90%;
+    }
+    #body {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header.hero {
+        height: 200px;
+    }
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: block;
+        
+
+    }
+    header .mobile {
+        margin-top: 20px;
+    }
+    header {
+        height: 125px;
+    }
+    nav {
+        text-align: center;
+    }
+    header .logo a {
+        height: 200px;
+        width: 200px;
+    }
+    .triple figure {
+        margin-left: 10%;
+    }
+    
+
+
 }
 
 button{
     background-color: rgb(25, 25, 25);
     color: white;
-    border: 2px solid;
-    
-    border-radius: 2px;
-    padding: 10px;
-    width: 70px;
+    border: 1.5px white solid;
+    text-align: center;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px 
+}
+
+button:hover {
+    border: 2px rgb(50, 133, 241) solid;
 }
 
 .color{
@@ -184,7 +247,7 @@ button{
 
 
 li.open {
-    border-bottom: 3px solid rgb(51, 118, 205);
+    border-bottom: 3px solid rgb(50, 133, 241);
 }
 
 
@@ -198,7 +261,6 @@ input {
 }
 
 
-
 figure {
     margin: auto;
     width: 100px;
@@ -206,3 +268,4 @@ figure {
     margin-right: 10%;
     
 }
+
