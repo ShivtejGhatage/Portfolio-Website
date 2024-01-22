@@ -7,6 +7,14 @@ header {
     font-weight: 600;
 }
 
+#small_mobile{
+    display: none;
+}
+
+textarea {
+    padding: 10px;
+}
+
 #mobile {
     display: none;
 }
@@ -185,6 +193,9 @@ footer {
     #mobile {
         display: block;
     }
+    #small_mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -213,10 +224,21 @@ footer {
         width: 200px;
     }
     .triple figure {
-        margin-left: 10%;
-    }
-    
+        margin-left: 7%;
 
+    }
+    .Hobbimages{
+        width: 270px;
+    }
+    #body {
+        display: none;
+    }
+    #mobile {
+        display: none;
+    }
+    #small_mobile {
+        display: block;
+    }
 
 }
 

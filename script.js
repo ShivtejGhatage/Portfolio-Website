@@ -13,10 +13,11 @@ function appendC() {
     var fname = document.getElementById('fname')
     var subject = document.getElementById('subject')
     var body = document.getElementById('body')
-    
+    var mobile = document.getElementById('mobile')
+    var small_mobile = document.getElementById('small_mobile')
     function sendmail() {
         body.innerHTML = body.innerHTML + ' '
-        window.location.href = 'mailto:shivtejmailbox@gmail.com?&subject=' + subject.value + "&body=" + body.value + fname.value;
+        window.location.href = 'mailto:shivtejmailbox@gmail.com?&subject=' + subject.value + "&body=" + small_mobile.value + body.value + mobile.value;
       }
       
       window.addEventListener('load', openMailApplication);
