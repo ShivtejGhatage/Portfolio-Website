@@ -64,7 +64,7 @@ figcaption{
     padding: 15px;
     font-size: large;
 }
-
+ 
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -78,7 +78,10 @@ nav ul li {
     margin-right: 20px;
     text-align: center;
     padding: 4px;
+    transition: 0.25s;
 }
+
+
 
 nav ul li:last-child {
     margin-right: 0; 
@@ -130,7 +133,8 @@ body {
 
 
 .aimg :hover {
-    border: 2px rgb(50, 133, 241) solid;
+    border: 2px rgb(52, 120, 247) solid;
+    box-shadow: 0 0 10px rgb(52, 120, 247);
 }
 
 
@@ -224,7 +228,7 @@ footer {
         width: 200px;
     }
     .triple figure {
-        margin-left: 1%;
+        margin-left: 15%;
 
     }
     .Hobbimages{
@@ -242,19 +246,41 @@ footer {
 
 }
 
+
+@media screen and (max-width:480px){
+    .triple figure {
+        margin-left: 1%;
+    }
+}
+
 button{
     background-color: rgb(25, 25, 25);
+    display: inline-block;
     color: white;
     border: 1.5px white solid;
     text-align: center;
-    border-radius: 20px;
-    width: 80px;
-    height: 40px 
+    border-radius: 3px;
+    width: 100px;
+    height: 50px;   
+    margin-left: 75%;
+    font-size: large;
+    transition: 0.5s;
+
 }
 
 button:hover {
-    border: 2px rgb(50, 133, 241) solid;
+    border: 2px rgb(52, 120, 247) solid;
+    box-shadow: 0 0 8px rgb(52, 120, 247);
+    letter-spacing: 0.8px;
 }
+
+li:hover {
+
+    border-bottom: 2px  white solid;
+    box-shadow: 0 10px 12px -12px white;
+}
+
+
 
 .color{
     background-color: rgb(25, 25, 25);
@@ -269,11 +295,15 @@ button:hover {
 
 
 li.open {
-    border-bottom: 3px solid rgb(50, 133, 241);
+    border-bottom: 3px solid rgb(52, 120, 247);
+    box-shadow: 0 10px 10px -10px rgb(52, 120, 247);
 }
 
 
-
+.logo:hover {
+    border: none;
+    box-shadow: none;
+}
 
 
 
@@ -290,4 +320,18 @@ figure {
     margin-right: 10%;
     
 }
+
+.wrapper {
+    display: flex;
+  }
+  
+  .inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .wrapper .inner:hover{
+    max-height: 100%;
+  }
 
