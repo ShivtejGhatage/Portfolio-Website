@@ -1,13 +1,165 @@
+/* Header */
 header {
     font-family: 'Poppins Bold 700', Helvetica, sans-serif;
-    padding: 20px;
-    width: auto;
-    height: 20px;
     font-size: large;
     font-weight: 600;
+    height: 20px;
+    padding: 20px;
+    width: auto;
 }
 
-#small_mobile{
+/* Header Hero Images */
+header.hero {
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+}
+
+.guitar {
+    background-image: url('images/guitar_hero.jpeg');
+}
+
+header .mobile {
+    display: none;
+}
+
+.magic {
+    background-image: url('images/magic_hero.jpg');
+}
+
+.program {
+    background-image: url('images/programming_hero.jpeg');
+}
+
+/* Navigation */
+header .logo a {
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -18px;
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Poppins Bold 700', Helvetica, sans-serif;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 4px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+li:hover {
+    border-bottom: 2px  white solid;
+    box-shadow: 0 10px 12px -12px white;
+}
+
+li.open {
+    border-bottom: 3px solid rgb(52, 120, 247);
+    box-shadow: 0 10px 10px -10px rgb(52, 120, 247);
+}
+
+.logo:hover {
+    box-shadow: none;
+    border: none;
+}
+
+/* Sections */
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.triple {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+    display: flex;
+    margin: 20px;
+}
+
+/* Images */
+.Hobbimages {
+    border: 1.5px grey solid;
+    border-radius: 50%;
+    box-shadow: black 0 0 10px;
+    transition: transform 0.3s ease-in-out;
+    /* Add a smooth transition effect */
+    width: 200px;
+}
+
+.Hobbimages:hover {
+    transform: scale(1.035);
+    /* Scale up on hover */
+}
+
+.aimg :hover {
+    border: 2px rgb(52, 120, 247) solid;
+    box-shadow: 0 0 10px rgb(52, 120, 247);
+}
+
+figcaption {
+    font-size: large;
+    padding: 15px;
+    text-align: center;
+}
+
+.lower {
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+figure {
+    margin: auto;
+    margin-right: 10%;
+    padding: 30px;
+    width: 100px;
+}
+
+/* Tables and forms */
+form {
+    margin-right: 20px;
+    padding: 30px;
+}
+
+#mobile {
+    display: none;
+}
+
+#small_mobile {
     display: none;
 }
 
@@ -15,312 +167,107 @@ textarea {
     padding: 10px;
 }
 
-#mobile {
-    display: none;
+input {
+    width: 98%;
 }
 
-header.hero {
-    height: 400px;
-    
-    background-size: 100%;
-    background-position: center;
-}
-
-header .mobile {
-    display: none;
-}
-
-.guitar {
-    background-image: url('images/guitar_hero.jpeg');
-}
-
-.program {
-    background-image: url('images/programming_hero.jpeg');
-}
-
-.magic {
-    background-image: url('images/magic_hero.jpg');
-}
-
-h1 {
-    margin-left: 30px;
-    font-family: 'Poppins Bold 700', Helvetica, sans-serif;
-}
-
-header .logo a {
-    background-image: url('images/logo.png');
-    background-size: 100%;
-    display: inline-block;
-    height: 80px;
-    width:100px;
-    text-indent: -9999999px;
-    position: relative;
-    top: -18px;
-    background-repeat: no-repeat;
-    
-}
-figcaption{
-    text-align: center;
-    padding: 15px;
-    font-size: large;
-}
- 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-
-}
-
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    text-align: center;
-    padding: 4px;
-    transition: 0.25s;
-}
-
-
-
-nav ul li:last-child {
-    margin-right: 0; 
-}
-
-nav ul li:first-child {
-    margin-right: 0; 
-    margin-left: 0;
-}
-
-
-
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-body {
-    background-color: black;
-    color: aliceblue;
-    font-family:  Helvetica Neue, Helvetica, sans-serif;
-    margin: 0;
-    font-size: large;
-    line-height: 1.4;
-}
-
-.triple {
-    display: flex;
-    
-    background-color: rgb(25, 25, 25);
-    
-    border-radius: 10px;
-    margin: 10px;
-}
-
-
-
-.Hobbimages {
-    width: 200px;
-    border-radius: 50%;
-    box-shadow: black 0 0 10px;
-    border: 1.5px grey solid;
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-}
-
-.Hobbimages:hover {
-    transform: scale(1.035); /* Scale up on hover */
-}
-
-
-.aimg :hover {
-    border: 2px rgb(52, 120, 247) solid;
-    box-shadow: 0 0 10px rgb(52, 120, 247);
-}
-
-
-
-.lower {
-    padding: 20px;
-    margin: 20px;
-    background-color: rgb(25, 25, 25);
-    border-radius: 10px;
-}
-
-
-td{
+td {
     border: 1px solid;
-    width: 100%;
     padding: 15px;
+    width: 100%;
 }
 
-
-form {
-    padding: 30px;
-    margin-right: 20px;
-}
-
-footer {
-    padding: 25px;
-
-}
-
-@media screen and (max-width: 733px) {
-    .triple{
-        display: block;
-        
-    }
-    .triple figure {
-        margin-left: 22%;
-        
-    }
-    .Hobbimages{
-        width: 300px;
-    }
-    
-    
-}
-
-@media screen and (max-width: 665px){
-    header.hero {
-        height: 290px;
-    }
-    .triple figure {
-        margin-left: 15%;
-        
-    }
-    form {
-        width: 90%;
-    }
-    #body {
-        display: none;
-    }
-    #mobile {
-        display: block;
-    }
-    #small_mobile {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header.hero {
-        height: 200px;
-    }
-    header .desktop {
-        display: none;
-    }
-    header .mobile {
-        display: block;
-        
-
-    }
-    header .mobile {
-        margin-top: 20px;
-    }
-    header {
-        height: 125px;
-    }
-    nav {
-        text-align: center;
-    }
-    header .logo a {
-        height: 200px;
-        width: 200px;
-    }
-    .triple figure {
-        margin-left: 15%;
-
-    }
-    .Hobbimages{
-        width: 240px;
-    }
-    #body {
-        display: none;
-    }
-    #mobile {
-        display: none;
-    }
-    #small_mobile {
-        display: block;
-    }
-
-}
-
-
-@media screen and (max-width:480px){
-    .triple figure {
-        margin-left: 4%;
-    }
-    button {
-        margin-left: 65%;
-    }
-}
-
-button{
+/* Button */
+button {
     background-color: rgb(25, 25, 25);
-    display: inline-block;
-    color: white;
     border: 1.5px white solid;
-    text-align: center;
     border-radius: 3px;
-    width: 100px;
-    height: 50px;   
-    margin-left: 75%;
+    color: white;
+    display: inline-block;
     font-size: large;
+    height: 50px;
+    letter-spacing: 0.8px;
+    margin-left: 75%;
+    text-align: center;
     transition: 0.5s;
+    width: 100px;
 }
 
 button:hover {
     border: 2px rgb(52, 120, 247) solid;
     box-shadow: 0 0 8px rgb(52, 120, 247);
-    letter-spacing: 0.8px;
 }
 
-li:hover {
-
-    border-bottom: 2px  white solid;
-    box-shadow: 0 10px 12px -12px white;
+/* Footer */
+footer {
+    padding: 25px;
 }
 
+/* Responsive rules (desktop down) */
+@media screen and (max-width: 733px) {
+    .triple {
+        display: block;
+    }
 
+    .triple figure {
+        margin-left: 22%;
+    }
 
-.color{
-    background-color: rgb(25, 25, 25);
-    padding: 30px;
-    border-radius: 10px;
-    margin: 20px;
+    .Hobbimages {
+        width: 300px;
+    }
 }
 
-.sub {
-    background-color: rgb(25, 25, 25);
+@media screen and (max-width: 665px) {
+    #body {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #small_mobile {
+        display: none;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .triple figure {
+        margin-left: 15%;
+    }
+
+    header.hero {
+        height: 290px;
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .triple figure {
+        margin-left: 10%;
+    }
 
-li.open {
-    border-bottom: 3px solid rgb(52, 120, 247);
-    box-shadow: 0 10px 10px -10px rgb(52, 120, 247);
+    #body {
+        display: none;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #small_mobile {
+        display: block;
+    }
+
+    button {
+        margin-left: 65%;
+    }
 }
 
-
-.logo:hover {
-    border: none;
-    box-shadow: none;
+@media screen and (max-width: 480px) {
+    .triple figure {
+        margin-left: 4.5%;
+    }
 }
-
-
-
-
-input {
-    width: 98%;
-}
-
-
-figure {
-    margin: auto;
-    width: 100px;
-    padding: 30px;
-    margin-right: 10%;
-    
-}
-
-
