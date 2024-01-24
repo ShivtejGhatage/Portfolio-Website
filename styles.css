@@ -182,7 +182,7 @@ td{
 
 form {
     padding: 30px;
-    margin-right: 35px;
+    margin-right: 10%;
 }
 
 /* Text area */
@@ -306,15 +306,7 @@ footer {
     .Hobbimages{
         width: 240px;
     }
-    #body {
-        display: none;
-    }
-    #mobile {
-        display: none;
-    }
-    #small_mobile {
-        display: block;
-    }
+    
     
 }
 
@@ -325,6 +317,15 @@ footer {
     button {
         margin-left: 65%;
     }   
+    #body {
+        display: none;
+    }
+    #mobile {
+        display: none;
+    }
+    #small_mobile {
+        display: block;
+    }
 }
 
 
