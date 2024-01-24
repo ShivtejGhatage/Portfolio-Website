@@ -185,6 +185,10 @@ form {
     margin-right: 10%;
 }
 
+table {
+    margin-right: 20%;
+}
+
 /* Text area */
 #small_mobile{
     display: none;
