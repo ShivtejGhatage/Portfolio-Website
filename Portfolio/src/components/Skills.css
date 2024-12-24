@@ -1,0 +1,68 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -5px; /* Negative gap for overlap */
+}
+
+.skill-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease;
+    font-size: 80px;
+    margin: -15px 0; /* Negative margin for tighter overlap */
+    padding: 0;
+}
+.skill-item {
+    position: relative;
+    /* font-size: 1.5rem; */
+    color: #fff;
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, white, gray); /* Gradient effect */
+    background-clip: text; /* Ensures the gradient is applied to text */
+    -webkit-background-clip: text; /* Safari support */
+    color: transparent; /* Ensures text takes on the gradient colors */
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    color: var(--hover-color);
+}
+
+.skill-item:hover .popup {
+    opacity: 1;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(10px); /* Slight upward shift for smooth appearance */
+}
+
+.popup {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--hover-color);
+    color: a;
+    font-size: 14px; /* Adjusted font size for better readability */
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for better separation */
+    z-index: 10; /* Ensures the popup appears above other elements */
+}
+

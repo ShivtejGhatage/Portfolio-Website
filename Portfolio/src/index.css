@@ -1,0 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(25,27,42);
+  color: white;
+  /* background: radial-gradient(circle, rgba(169, 176, 182, 1) 60%, rgba(140, 150, 160, 1) 100%); */
+  overflow-x: hidden;
+}

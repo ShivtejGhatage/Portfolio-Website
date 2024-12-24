@@ -1,0 +1,152 @@
+.Startdiv {
+    padding: 100px;
+    padding-right: 10px;
+    padding-left: 20px;
+    height: 600px;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    display: flex;
+    /* background-color: aqua; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.st {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: first baseline; /* Center horizontally */
+    gap: 0; /* No gap between flex items */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    position: relative;
+    /* top: 100px; */
+    width: 58%;
+    /* background-color: aqua; */
+}
+
+.titleSred {
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(255,61,45);
+    position: relative;
+    margin: 0;  /* Remove margin */
+    padding: 0; /* Remove padding */
+    /* background-color: azure; */
+    top: -35px;
+}
+.titleSredtext { 
+    color: rgb(255,61,45);
+}
+
+.titleS {
+    font-size: 80px;
+    font-weight: 600;
+    color: white;
+    margin: 0;  /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.purpSuper {
+    color: rgb(51,108,236);
+    /* background-color: violet; */
+    width: 500px;
+    height: 100%;
+}
+
+.purp {
+    position: absolute;
+    left: 58%; /* Start at 60% of the viewport width */
+    width: 45%; /* Extend to the far right (100% - 60% = 40%) */
+    height: 600px;
+    background-color: rgb(153,149,244);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    
+  }
+
+.iitb {
+    height: 500px;
+    margin: auto;
+    margin-left: 15%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.subtitleS {
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    font-weight: 500;
+    top: -40px;
+    /* margin-top: 20px; Optional: Space above subtitle */
+}
+
+/* Container for the 'Get App' button */
+
+.redbutton {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 50, 23);
+    padding: 7px 17px; /* Padding for the button */
+    border-radius: 15px; /* Rounded corners */
+    font-size: small; /* Text size */
+    color: white; /* White text color */
+    margin: 30px;
+    /* font-weight: bold; */
+    text-decoration: none; /* Remove underline if it's a link */
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer; /* Make the button clickable */
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+    position: relative;
+    top: -40px;
+  }
+  
+
+  /* Hover effect to darken the background color */
+  .redbutton:hover {
+    background-color: rgb(202, 24, 0); /* Darker blue on hover */
+  }
+  .redbutton:hover .arrow {
+    transform: rotate(-45deg); /* Rotate the arrow to the right on hover */
+    /* background-color: #0056b3; */
+  }
+
+  /* Style for the arrow icon */
+  .redbutton .arrow {
+    margin-left: 8px; /* Space between text and arrow */
+    margin-right: 3px;
+    margin-bottom: 1px;
+    font-size: 13px; /* Arrow size */
+    font-weight: 700;
+    transform: translateY(1px); /* Adjust vertical position for alignment */
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+  }
+  
+  @media (max-width: 958px) {
+    .titleSred {
+      font-size: 50px;
+      top: -20px;
+    }
+    .titleS{
+      font-size: 50px;
+    }
+    .subtitleS {
+      font-size: 15px;
+      top: -20px;
+    }
+}

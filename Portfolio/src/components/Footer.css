@@ -1,0 +1,73 @@
+/* Footer Styles */
+.footer {
+    /* background-color: #000000; */
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* height: 200px; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-details, .visitor-counter {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+}
+
+h7 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.elfsight-widget {
+    margin-top: 10px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-details, .visitor-counter {
+        padding: 10px 0;
+        text-align: center;
+    }
+}

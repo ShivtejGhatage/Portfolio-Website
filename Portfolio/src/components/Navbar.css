@@ -1,0 +1,70 @@
+.navigation {
+  position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    align-self: center;
+    color: white;
+    font-family: 'Poppins';
+    /* padding: 10px 0; */
+    background-color: rgb(25,27,42);
+    padding: 20px 20px;
+    margin-bottom: 50px;
+    /* border-bottom: 1px solid rgb(243,243,243); */
+    z-index: 1000;
+  }
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navstart {
+  display: flex;
+}
+.logo {
+    font-size: 2rem;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: medium;
+    font-weight: 400;
+    margin-top: 15px;
+}
+a {
+  color: white;
+    text-decoration: None;
+}
+
+.coloredHover li :hover {
+    border-bottom: 1px solid rgb(51,108,236);
+    
+}
+
+.active {
+  font-weight: 600;
+}
+
+.contact-btn {
+  padding: 10px 20px; /* Balanced padding */
+  background-color: rgb(25,27,42);
+  color: white;/* White text */
+  border: none; /* Light border for subtle contrast */
+  font-size: 20px; /* Comfortable text size */
+  font-weight: 500; /* Slightly bold for readability */
+  cursor: pointer; /* Pointer on hover */
+  margin-right: 20px;
+  font-family: 'Poppins';
+}
+
+/* Subtle hover effect */
+
+
+/* Focus state for accessibility */
+
+
+

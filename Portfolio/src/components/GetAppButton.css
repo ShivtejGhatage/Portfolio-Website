@@ -1,0 +1,40 @@
+/* Container for the 'Get App' button */
+.get-app-btn {
+    display: flex;
+    align-items: center;
+    background-color: rgb(52,120,246); /* Blue background */
+    padding: 7px 17px; /* Padding for the button */
+    border-radius: 15px; /* Rounded corners */
+    font-size: small; /* Text size */
+    color: white; /* White text color */
+    margin: 30px;
+    /* font-weight: bold; */
+    text-decoration: none; /* Remove underline if it's a link */
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer; /* Make the button clickable */
+    z-index: 3;
+  }
+  
+  
+
+  /* Hover effect to darken the background color */
+  .get-app-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .get-app-btn:hover .arrow {
+    transform: rotate(-45deg); /* Rotate the arrow to the right on hover */
+    /* background-color: #0056b3; */
+  }
+
+  /* Style for the arrow icon */
+  .get-app-btn .arrow {
+    margin-left: 8px; /* Space between text and arrow */
+    margin-right: 3px;
+    margin-bottom: 1px;
+    font-size: 13px; /* Arrow size */
+    font-weight: 700;
+    transform: translateY(1px); /* Adjust vertical position for alignment */
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+  }
+  
